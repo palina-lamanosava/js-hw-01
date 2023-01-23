@@ -19,25 +19,25 @@ let priceDelivery;
 if (deliveryCountry === null) {
     console.log("Отменено пользователем");
 } else {
-    let delivery = deliveryCountry.toUpperCase();
+    let delivery = deliveryCountry.toLowerCase();
     switch (delivery) {
-    case "КИТАЙ":
+    case "китай":
             priceDelivery = 100;
             console.log ( `Стоимость доставки в ${delivery} составляет ${priceDelivery} злотых.`)
         break;
-    case "ЧИЛИ":
+    case "чили":
             priceDelivery = 250;
             console.log ( `Стоимость доставки в ${delivery} составляет ${priceDelivery} злотых.`)
         break;
-    case "АВСТРАЛИЯ":
+    case "австралия":
             priceDelivery = 170;
             console.log ( `Стоимость доставки в ${delivery} составляет ${priceDelivery} злотых.`)
         break;
-    case "ИНДИЯ":
+    case "индия":
             priceDelivery = 80;
             console.log ( `Стоимость доставки в ${delivery} составляет ${priceDelivery} злотых.`)
         break;
-    case "ЯМАЙКА":
+    case "ямайка":
             priceDelivery = 120;
             console.log ( `Стоимость доставки в ${delivery} составляет ${priceDelivery} злотых.`)
         break;
